@@ -444,6 +444,12 @@ a:hover {
         height: 59px;
         left: -2px;
     }
+	
+    .skills {
+	justify-content: center;
+    }
+	
+     
 
 }
 
