@@ -49,6 +49,7 @@ h2 {
 
 h3 {
     font-size: 25px;
+    font-weight: 500;
 }
 
 button, input, textarea {
@@ -177,10 +178,6 @@ a:hover {
     margin: 30px 0 25px;
 }
 
-.exp__title {
-    font-weight: 500;
-}
-
 .exp__item:not(:last-child) {
     margin-bottom: 25px;
 }
@@ -230,6 +227,10 @@ a:hover {
     border-radius: 50%;
 }
 
+.education__item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
 .education__adress {
     margin: 7px 0 15px;
     opacity: 0.7;
@@ -260,3 +261,218 @@ a:hover {
     transform: scale(1.2);
     border-bottom: none;
 }
+
+/* ------ Media Queries ------ */
+
+/* 1201-1600px */
+
+@media screen and (max-width: 1600px) {
+    .header__wrapper::before {
+        top: -66px;
+        right: 0;
+    }
+
+    .header__wrapper {
+        justify-content: space-around;
+    }
+}
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+        max-width: 960px;
+    }
+
+    .avatar {
+        width: 250px;
+        height: 250px;
+    }
+
+    .header__wrapper::before {
+        top: -72px;
+        right: 8%;
+    }
+
+    .header::before {
+        background: url(../img/vector-responsive_laptop.svg);
+        width: 78px;
+        height: 78px;
+        left: -2px;
+    }
+}
+
+/* 768-991px */
+
+@media screen and (max-width: 991px) {
+	.container {
+        max-width: 720px;
+    }
+    
+    h1 {
+        font-size: 45px;
+    }
+
+    .header__text {
+        font-size: 32px;
+    }
+
+    .skills__item {
+        min-height: 45px;
+    }
+
+}
+
+/* 576px-767px */
+
+@media screen and (max-width: 767px) {
+	.container {
+        max-width: 540px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .header__text {
+        font-size: 26px;
+    }
+
+    .header__wrapper::before {
+        display: none;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills__item {
+        width: auto;
+        min-height: 0;
+        padding-left: 9px;
+    }
+
+    .skills__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .skills__item::before {
+        top: 9px;
+        width: 3px;
+        height: 3px;
+    }
+
+    .about-info::before {
+        width: 4px;
+        height: 4px;
+    }
+
+    h3 {
+        line-height: 1em;
+    }
+
+}
+
+/* 451px-575px */
+
+@media screen and (max-width: 575px) {
+	.container {
+        max-width: 95%;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    .avatar {
+        width: 140px;
+        height: 140px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .header__text {
+        font-size: 22px;
+    }
+
+    .header__wrapper::after {
+        left: 35%;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .footer-info {
+        flex-direction: column;
+    }
+
+    .footer-info__item {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-info__item:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .about-info {
+        padding-left: 0;
+    }
+
+    .about-info::before {
+        display: none;
+    }
+
+    .header::before {
+        background: url(../img/vector-responsive_mobile.svg);
+        width: 59px;
+        height: 59px;
+        left: -2px;
+    }
+
+}
+
+
+/* 320-450px */
+
+@media screen and (max-width: 450px) {
+    .header__wrapper::after {
+        left: 41%;
+        bottom: -45px;
+        height: 41px;
+        width: 80px;
+    }
+
+    .avatar {
+        width: 125px;
+        height: 125px;
+    }
+
+    .about {
+        padding: 40px 0;
+    }
+
+    .about-title {
+        margin: 23px 0 15px;
+    }
+
+    .exp__info, .education__adress{
+        margin: 5px 0 15px;
+    }
+}
+
